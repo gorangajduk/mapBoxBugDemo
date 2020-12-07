@@ -1,0 +1,26 @@
+{
+  "version": 8,
+  "name": "Statens kartverk topo4",
+  "sprite": "",
+  "glyphs": "asset://fonts/{fontstack}/{range}.pbf",
+  "sources": {
+    "yourTileLayer": {
+      "type": "raster",
+      "tiles": [
+        "https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom={z}&x={x}&y={y}&format=image/png"
+      ],
+      "tileSize": 256,
+      "attribution" : "<a href='http://www.kartverket.no/'>Kartverket</a>"
+    }
+  },
+  "layers": [
+    {
+      "id": "yourTileLayer",
+      "type": "raster",
+      "source": "yourTileLayer",
+      "paint": {
+        "raster-fade-duration": 100
+      }
+    }
+  ]
+}
